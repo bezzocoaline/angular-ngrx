@@ -15,3 +15,7 @@ export class GetConfigSuccess implements Action {
     public readonly type = EConfigActions.GetConfigSuccess; 
     constructor(public payload: IConfig) {}
 }
+
+export type ConfigActions = 
+    | GetConfig
+    | GetConfigSuccess
